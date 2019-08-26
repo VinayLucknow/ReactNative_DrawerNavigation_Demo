@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, Image } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { Ionicons } from '@expo/vector-icons';
 
 
 export default class AboutScreen extends React.Component {
@@ -20,8 +21,15 @@ export default class AboutScreen extends React.Component {
     // };
   
     static navigationOptions = {
-      title: 'Profile',
-      /* No more header config here! */
+      drawerLabel: 'Profile',
+      drawerIcon: () =>(
+
+        //<Ionicons name='md-notifications' size={32} color="black" />
+        <Image
+         source = {require('../icons/profile.png')}
+         style = {{width:30, height: 30}}
+        />
+      )
     };
   
     render() {

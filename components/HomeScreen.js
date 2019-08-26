@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { Ionicons } from '@expo/vector-icons';
 
 
 export default class HomeScreen extends React.Component {
@@ -20,8 +21,12 @@ export default class HomeScreen extends React.Component {
     // };
   
     static navigationOptions = {
-      title: 'Home',
-      /* No more header config here! */
+  
+      drawerLabel: 'Home',
+      drawerIcon: () =>(
+
+        <Ionicons name="md-home" size={32} color="black" />
+      )
     };
   
     render() {
