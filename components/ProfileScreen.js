@@ -27,7 +27,7 @@ export default class AboutScreen extends React.Component {
         //<Ionicons name='md-notifications' size={32} color="black" />
         <Image
          source = {require('../icons/profile.png')}
-         style = {{width:30, height: 30}}
+         style = {{width:32, height: 32}}
         />
       )
     };
